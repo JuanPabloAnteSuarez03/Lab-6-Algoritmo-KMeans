@@ -11,7 +11,7 @@ val standardConfig = config(
 ) withWarmer (Warmer.Default())
 
 val numPuntos = 500000
-val eta = 12
+val eta = 0.1
 val k = 32
 
 val puntos: Seq[Punto] = Seq(
@@ -50,6 +50,9 @@ val mediaActualizadaPar = actualizarPar(clasificaPar, medianasPar)
  
 val convergenciaSeq = hayConvergenciaSeq(eta, medianas, mediaActualizadaSeq)
 val convergenciaPar = hayConvergenciaPar(eta, medianasPar, mediaActualizadaPar)
+
+val kMedianasSecuencial = kMedianasSeq(puntos, medianas, eta)
+val kMedianasParalelo = kMedianasPar(puntosPar, medianasPar, eta)
 /*
 val puntosSeq = generarPuntosSeq(k, numPuntos)
 val medianasSeq = inicializarMedianasSeq(k, puntosSeq)
