@@ -124,7 +124,7 @@ package object kmedianas {
       kMedianasSeq(puntos, medianasNuevas, eta)
     }
   }
-/*
+
 
   def generarPuntosPar(k: Int, num: Int): ParSeq[Punto] = {
     val randx = new Random(1)
@@ -159,5 +159,4 @@ package object kmedianas {
     val rand = new Random(7)
     (0 until k).map(_ => puntos(rand.nextInt(puntos.length))).to(mutable.ArrayBuffer)
   }
-  */
 }

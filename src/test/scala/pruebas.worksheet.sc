@@ -53,12 +53,12 @@ val convergenciaPar = hayConvergenciaPar(eta, medianasPar, mediaActualizadaPar)
 
 val kMedianasSecuencial = kMedianasSeq(puntos, medianas, eta)
 val kMedianasParalelo = kMedianasPar(puntosPar, medianasPar, eta)
-/*
+
 val puntosSeq = generarPuntosSeq(k, numPuntos)
 val medianasSeq = inicializarMedianasSeq(k, puntosSeq)
 
-val puntosPar = generarPuntosPar(k, numPuntos)
-val medianasPar = inicializarMedianasPar(k, puntosPar)
+val puntosPar2 = generarPuntosPar(k, numPuntos)
+val medianasPar2 = inicializarMedianasPar(k, puntosPar)
 
 println("hola")
 
@@ -67,6 +67,5 @@ val tiempoSeq = standardConfig measure {
 }
 
 val tiempoPar = standardConfig measure {
-  kMedianasPar(puntosPar, medianasPar, eta)
+  kMedianasPar(puntosPar2, medianasPar2, eta)
 }
-*/
